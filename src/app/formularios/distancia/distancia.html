@@ -1,0 +1,21 @@
+<div class="container mt-4" style="max-width: 400px;">
+  <h3>Distancia entre 2 puntos</h3>
+
+  <div class="mt-4">
+    <label>Punto A (x1, y1):</label>
+    <div class="d-flex gap-2 mb-3">
+      <input [(ngModel)]="x1" type="number" class="form-control" placeholder="x1">
+      <input [(ngModel)]="y1" type="number" class="form-control" placeholder="y1">
+    </div>
+
+    <label>Punto B (x2, y2):</label>
+    <div class="d-flex gap-2 mb-4">
+      <input [(ngModel)]="x2" type="number" class="form-control" placeholder="x2">
+      <input [(ngModel)]="y2" type="number" class="form-control" placeholder="y2">
+    </div>
+
+    <button (click)="calcular()" class="btn btn-primary w-100">Calcular</button>
+  </div>
+
+  <h4 class="mt-4 text-center">Distancia: {{ resultado }}</h4>
+</div>
