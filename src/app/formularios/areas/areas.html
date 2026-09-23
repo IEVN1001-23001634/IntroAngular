@@ -1,0 +1,24 @@
+<div>
+  <label>Valor 1 (Lado, Base, Radio): </label>
+  <input [(ngModel)]="v1" type="number">
+</div>
+<br>
+<div>
+  <label>Valor 2 (Altura, Apotema - solo usar si aplica): </label>
+  <input [(ngModel)]="v2" type="number">
+</div>
+<br>
+
+
+<div>
+  <input [(ngModel)]="figura" type="radio" name="figura" value="cuadrado"> Cuadrado
+  <input [(ngModel)]="figura" type="radio" name="figura" value="circulo"> Círculo
+  <input [(ngModel)]="figura" type="radio" name="figura" value="rectangulo"> Rectángulo
+  <input [(ngModel)]="figura" type="radio" name="figura" value="pentagono"> Pentágono
+</div>
+<br>
+
+
+<button (click)="calcular()">Calcular</button>
+
+<h3>Resultado: {{ resultado }}</h3>
